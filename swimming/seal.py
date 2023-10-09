@@ -1,7 +1,6 @@
 from datetime import date
 
-
-class Dolphin:
+class Seal:
     def __init__(self, name, species):
         # Establish the properties of each animal
         # with a default value
