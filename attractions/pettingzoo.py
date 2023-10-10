@@ -11,5 +11,8 @@ class PettingZoo:
         for animal in self.animals:
             string += f"\t* {animal.name} the {animal.species}, who is available for petting at {animal.shift}\n"
         return string
-
-
+    
+    @property
+    def last_critter_added(self):
+        return f"The last critter added to this attraction was {self.animals[-1].name} the {self.animals[-1].species}"
+    

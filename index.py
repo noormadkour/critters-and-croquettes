@@ -9,7 +9,7 @@ varmint_village = PettingZoo("Varmint Village")
 slither_inn = SnakePit("Slither Inn")
 whacky_wetlands = Wetlands("Whacky Wetlands")
 
-miss_fuzz = Llama("Miss Fuzz", "Domestic Llama", "midday", "llama chow")
+miss_fuzz = Llama("Miss Fuzz", "Domestic Llama", "midday", "llama chow", 12345)
 miss_eyelashes = Camel("Miss Eyelashes", "Camel", "morning", "camel food")
 horsey_mchorse = Horse("Horsey McHorseface", "Horse", "afternoon", "horse food")
 goatty = Goat("Goatty McGoat", "Goat", "morning", "goat food")
@@ -49,4 +49,7 @@ print(varmint_village)
 print(slither_inn)
 print(whacky_wetlands)
 
+miss_fuzz.chip_num = 54321
+print(miss_fuzz.chip_num)
 
+print(varmint_village.last_critter_added)
