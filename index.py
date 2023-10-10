@@ -5,11 +5,12 @@ from swimming import Clownfish, Dolphin, Seal, Starfish, TigerFish
 from slithering import Copperhead, Gartersnake, Komodo, Monitorlizard, Rattlesnake
 
 
-miss_fuzz = Llama("Miss Fuzz", "Domestic Llama")
-miss_eyelashes = Camel("Miss Eyelashes", "Camel")
-horsey_mchorse = Horse("Horsey McHorseface", "Horse")
-goatty = Goat("Goatty McGoat", "Goat")
-necky = Giraffe("Necky", "Giraffe")
+miss_fuzz = Llama("Miss Fuzz", "Domestic Llama", "midday")
+print(f'{miss_fuzz.name} the {miss_fuzz.species} is available to pet during the {miss_fuzz.shift} shift.')
+miss_eyelashes = Camel("Miss Eyelashes", "Camel", "morning")
+horsey_mchorse = Horse("Horsey McHorseface", "Horse", "afternoon")
+goatty = Goat("Goatty McGoat", "Goat", "morning")
+necky = Giraffe("Necky", "Giraffe", "midday")
 
 flipper = Dolphin("Flipper", "Dolphin")
 nemo = Clownfish("Nemo", "Clownfish")
