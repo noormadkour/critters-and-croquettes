@@ -10,11 +10,13 @@ miss_eyelashes = Camel("Miss Eyelashes", "Camel")
 horsey_mchorse = Horse("Horsey McHorseface", "Horse")
 goatty = Goat("Goatty McGoat", "Goat")
 necky = Giraffe("Necky", "Giraffe")
+
 flipper = Dolphin("Flipper", "Dolphin")
 nemo = Clownfish("Nemo", "Clownfish")
 polaris = Starfish("Polaris", "Starfish")
 tigger = TigerFish("Tigger the Tigerfish", "Tigerfish")
 rose = Seal("Rose", "Seal")
+
 sssnakey = Rattlesnake("Sssnakey", "Rattlesnake")
 montey = Monitorlizard("Montey", "Monitor Lizard")
 drogo = Komodo("Drogo", "Komodo Dragon")
