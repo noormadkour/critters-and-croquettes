@@ -19,9 +19,9 @@ from animals import (
 )
 from attractions import PettingZoo, SnakePit, Wetlands
 
-varmint_village = PettingZoo("Varmint Village")
-slither_inn = SnakePit("Slither Inn")
-whacky_wetlands = Wetlands("Whacky Wetlands")
+varmint_village = PettingZoo("Varmint Village", "a place to pet cute and fuzzy critters")
+slither_inn = SnakePit("Slither Inn", "a slippery space for special serpents")
+whacky_wetlands = Wetlands("Whacky Wetlands", "a wet wonderland for wandering waders")
 
 miss_fuzz = Llama("Miss Fuzz", "Domestic Llama", "midday", "llama chow", 12345)
 miss_eyelashes = Camel("Miss Eyelashes", "Camel", "morning", "camel food", 12345)
@@ -59,10 +59,21 @@ whacky_wetlands.animals.append(polaris)
 whacky_wetlands.animals.append(tigger)
 whacky_wetlands.animals.append(rose)
 
+
+
+bob = Goose("Bobert", "Canadian Goose", "duck food", "morning", 12345)
+varmint_village.add_animal(bob)
+
 print(varmint_village)
 print(slither_inn)
 print(whacky_wetlands)
 
-bob = Goose("Bobert", "Canadian Goose", "duck food", 12345)
-bob.walk()
-bob.swim()
+dolly = Goose("Dolly", "miniature goose", "morning", "hay", 1033)
+snappy = Komodo("Snappy", "American Alligator", "fish", 1044)
+
+varmint_village.add_animal_pythonic(dolly)
+varmint_village.add_animal_type_check(dolly)
+varmint_village.add_animal_pythonic(snappy)
+
+for animal in varmint_village.animals:
+    print(animal)

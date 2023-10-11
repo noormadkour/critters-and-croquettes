@@ -1,11 +1,5 @@
-class Wetlands:
-    def __init__(self, name):
-        self.name = name
-        self.description = "a wet wonderland for wandering waders"
-        self.animals = list()
+from .attraction import Attraction
 
-    def __str__(self):
-        string = f"{self.name} is {self.description}, like: \n"
-        for animal in self.animals:
-            string += f"\t* {animal.name} the {animal.species}\n"
-        return string
+class Wetlands(Attraction):
+    def __init__(self, name, description):
+        super().__init__(name, description)
