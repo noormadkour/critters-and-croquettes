@@ -68,4 +68,12 @@ print(varmint_village)
 print(slither_inn)
 print(whacky_wetlands)
 
+dolly = Goose("Dolly", "miniature goose", "morning", "hay", 1033)
+snappy = Komodo("Snappy", "American Alligator", "fish", 1044)
 
+varmint_village.add_animal_pythonic(dolly)
+varmint_village.add_animal_type_check(dolly)
+varmint_village.add_animal_pythonic(snappy)
+
+for animal in varmint_village.animals:
+    print(animal)
