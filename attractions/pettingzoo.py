@@ -1,15 +1,11 @@
-class PettingZoo:
-    def __init__(self, name):
-        self.name = name
-        self.description = "a place to pet cute and fuzzy critters"
-        self.animals = list()
+from .attraction import Attraction
+
+class PettingZoo(Attraction):
+    def __init__(self, name, description):
+        super().__init__(name, description)
 
     def __str__(self):
-        string = f"{self.name} is {self.description}, like: \n"
+        string = f"{self.name} is {self.description}, like ({len(self)} animals): \n"
         for animal in self.animals:
             string += f"\t* {animal.name} the {animal.species}, who is available for petting at {animal.shift}\n"
         return string
-
-    @property
-    def last_critter_added(self):
-        return f"The last critter added to this attraction was {self.animals[-1].name} the {self.animals[-1].species}"
