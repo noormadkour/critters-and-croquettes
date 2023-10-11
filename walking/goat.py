@@ -1,10 +1,8 @@
-from datetime import date
+from animal import Animal
 
-class Goat:
-    def __init__(self, name, species):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+
+class Goat(Animal):
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.walking = True
+        self.shift = shift

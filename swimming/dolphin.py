@@ -1,11 +1,7 @@
-from datetime import date
+from animal import Animal
 
 
-class Dolphin:
-    def __init__(self, name, species):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Dolphin(Animal):
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.swimming = True
