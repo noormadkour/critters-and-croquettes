@@ -1,5 +1,21 @@
 """ import the python datetime module to help us create a timestamp"""
-from animals import Camel, Giraffe, Goat, Horse, Llama, Clownfish, Dolphin, Seal, Starfish, TigerFish, Copperhead, Gartersnake, Komodo, Monitorlizard, Rattlesnake
+from animals import (
+    Camel,
+    Giraffe,
+    Goat,
+    Horse,
+    Llama,
+    Clownfish,
+    Dolphin,
+    Seal,
+    Starfish,
+    TigerFish,
+    Copperhead,
+    Gartersnake,
+    Komodo,
+    Monitorlizard,
+    Rattlesnake,
+)
 from attractions import PettingZoo, SnakePit, Wetlands
 
 varmint_village = PettingZoo("Varmint Village")
