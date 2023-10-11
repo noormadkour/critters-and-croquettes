@@ -15,6 +15,7 @@ from animals import (
     Komodo,
     Monitorlizard,
     Rattlesnake,
+    Goose
 )
 from attractions import PettingZoo, SnakePit, Wetlands
 
@@ -62,5 +63,6 @@ print(varmint_village)
 print(slither_inn)
 print(whacky_wetlands)
 
-miss_fuzz.feed_llama()
-miss_fuzz.feed()
+bob = Goose("Bobert", "Canadian Goose", "duck food", 12345)
+bob.walk()
+bob.swim()
