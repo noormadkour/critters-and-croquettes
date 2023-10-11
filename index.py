@@ -1,8 +1,22 @@
 """ import the python datetime module to help us create a timestamp"""
-from datetime import date
-from walking import Camel, Giraffe, Goat, Horse, Llama
-from swimming import Clownfish, Dolphin, Seal, Starfish, TigerFish
-from slithering import Copperhead, Gartersnake, Komodo, Monitorlizard, Rattlesnake
+from animals import (
+    Camel,
+    Giraffe,
+    Goat,
+    Horse,
+    Llama,
+    Clownfish,
+    Dolphin,
+    Seal,
+    Starfish,
+    TigerFish,
+    Copperhead,
+    Gartersnake,
+    Komodo,
+    Monitorlizard,
+    Rattlesnake,
+    Goose
+)
 from attractions import PettingZoo, SnakePit, Wetlands
 
 varmint_village = PettingZoo("Varmint Village")
@@ -10,10 +24,10 @@ slither_inn = SnakePit("Slither Inn")
 whacky_wetlands = Wetlands("Whacky Wetlands")
 
 miss_fuzz = Llama("Miss Fuzz", "Domestic Llama", "midday", "llama chow", 12345)
-miss_eyelashes = Camel("Miss Eyelashes", "Camel", "morning", "camel food")
-horsey_mchorse = Horse("Horsey McHorseface", "Horse", "afternoon", "horse food")
-goatty = Goat("Goatty McGoat", "Goat", "morning", "goat food")
-necky = Giraffe("Necky", "Giraffe", "midday", "giraffe food")
+miss_eyelashes = Camel("Miss Eyelashes", "Camel", "morning", "camel food", 12345)
+horsey_mchorse = Horse("Horsey McHorseface", "Horse", "afternoon", "horse food", 12345)
+goatty = Goat("Goatty McGoat", "Goat", "morning", "goat food", 12345)
+necky = Giraffe("Necky", "Giraffe", "midday", "giraffe food", 12345)
 
 varmint_village.animals.append(miss_fuzz)
 varmint_village.animals.append(miss_eyelashes)
@@ -21,11 +35,11 @@ varmint_village.animals.append(horsey_mchorse)
 varmint_village.animals.append(goatty)
 varmint_village.animals.append(necky)
 
-sssnakey = Rattlesnake("Sssnakey", "Rattlesnake", "snake food")
-montey = Monitorlizard("Montey", "Monitor Lizard", "lizard food")
-drogo = Komodo("Drogo", "Komodo Dragon", "dragon food")
-cypress = Gartersnake("Cypress", "Garter Snake", "snake food")
-copper = Copperhead("Copper", "Copperhead Snake", "snake food")
+sssnakey = Rattlesnake("Sssnakey", "Rattlesnake", "snake food", 12345)
+montey = Monitorlizard("Montey", "Monitor Lizard", "lizard food", 12345)
+drogo = Komodo("Drogo", "Komodo Dragon", "dragon food", 12345)
+cypress = Gartersnake("Cypress", "Garter Snake", "snake food", 12345)
+copper = Copperhead("Copper", "Copperhead Snake", "snake food", 12345)
 
 slither_inn.animals.append(sssnakey)
 slither_inn.animals.append(montey)
@@ -33,11 +47,11 @@ slither_inn.animals.append(drogo)
 slither_inn.animals.append(cypress)
 slither_inn.animals.append(copper)
 
-flipper = Dolphin("Flipper", "Dolphin", "dolphin food")
-nemo = Clownfish("Nemo", "Clownfish", "fish food")
-polaris = Starfish("Polaris", "Starfish", "starfish food")
-tigger = TigerFish("Tigger", "Tigerfish", "fish food")
-rose = Seal("Rose", "Seal", "seal food")
+flipper = Dolphin("Flipper", "Dolphin", "dolphin food", 12345)
+nemo = Clownfish("Nemo", "Clownfish", "fish food", 12345)
+polaris = Starfish("Polaris", "Starfish", "starfish food", 12345)
+tigger = TigerFish("Tigger", "Tigerfish", "fish food", 12345)
+rose = Seal("Rose", "Seal", "seal food", 12345)
 
 whacky_wetlands.animals.append(flipper)
 whacky_wetlands.animals.append(nemo)
@@ -49,7 +63,6 @@ print(varmint_village)
 print(slither_inn)
 print(whacky_wetlands)
 
-miss_fuzz.chip_num = 54321
-print(miss_fuzz.chip_num)
-
-print(varmint_village.last_critter_added)
+bob = Goose("Bobert", "Canadian Goose", "duck food", 12345)
+bob.walk()
+bob.swim()
